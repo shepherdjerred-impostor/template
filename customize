@@ -6,12 +6,20 @@ for input_file in `tree -I "${ignore_files}" -Ffai --noreport`
 do
   if [ ! -d "${input_file}" ]; then
     echo "Processing file: ${input_file}"
+    new_file_name=gomplate \
+                   -i "${input_file}" \
+                   --left-delim "<<[" \
+                   --right-delim "]>>" \
+                   -c customize=./customize.json
     gomplate \
          -f "${input_file}" \
-         -o "${input_file}" \
-         --left-delim "<<[" \
-         --right-delim "]>>" \
+         -o "${new_file_name}" \
+         --left-delim "[" \
+         --right-delim "]" \
          -c customize=./customize.json
+    if [[ "$new_file_name" != "$input_file" ]]; then
+      rm "$input_file"
+    fi
   fi
 done
 

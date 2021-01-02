@@ -28,10 +28,10 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: dll
-          path: bin/Release/net5.0/<<[ .customize.dll-name ]>>
+          path: bin/Release/net5.0/<<[ .customize.dllName ]>>
       - uses: eine/tip@master
         with:
           tag: continous-integration
           token: ${{ secrets.ACCESS_TOKEN }}
           files: |
-            bin/Release/net5.0/<<[ .customize.dll-name ]>>
+            bin/Release/net5.0/<<[ .customize.dllName ]>>
