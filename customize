@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+set -x
+set -e
 
 ignore_files=".git|customize|README.md"
 
@@ -6,11 +9,11 @@ for input_file in `tree -I "${ignore_files}" -Ffai --noreport`
 do
   if [ ! -d "${input_file}" ]; then
     echo "Processing file: ${input_file}"
-    new_file_name=gomplate \
+    new_file_name=$(gomplate \
                    -i "${input_file}" \
                    --left-delim "<<[" \
                    --right-delim "]>>" \
-                   -c customize=./customize.json
+                   -c customize=./customize.json)
     gomplate \
          -f "${input_file}" \
          -o "${new_file_name}" \
