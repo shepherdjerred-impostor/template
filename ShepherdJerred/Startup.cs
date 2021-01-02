@@ -3,7 +3,7 @@ using Impostor.Api.Plugins;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace <<[ .customize.projectName ]>>.ShepherdJerred {
+namespace <<[ .projectName ]>>.ShepherdJerred {
     public class Startup : IPluginStartup {
         public void ConfigureHost(IHostBuilder host) {
         }

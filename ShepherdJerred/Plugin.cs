@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using Impostor.Api.Plugins;
 
-namespace <<[ .customize.projectName ]>>.ShepherdJerred {
+namespace <<[ .projectName ]>>.ShepherdJerred {
     [ImpostorPlugin(
         "com.shepherdjerred",
-        "<<[ .customize.projectName ]>>",
+        "<<[ .projectName ]>>",
         "Jerred Shepherd",
         "1.0.0")]
     // ReSharper disable once UnusedType.Global
