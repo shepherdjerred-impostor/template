@@ -1,7 +1,7 @@
 # Imposter <<[ .projectName ]>>
-[![License](https://img.shields.io/github/license//<<[ .ownerName ]>>/<<[ .repoName ]>>)](https://github.com//<<[ .ownerName ]>>/<<[ .repoName ]>>/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/workflow/status//<<[ .ownerName ]>>/<<[ .repoName ]>>/CI)](https://github.com//<<[ .ownerName ]>>/<<[ .repoName ]>>/actions)
-[![Latest Release](https://img.shields.io/github/v/release//<<[ .ownerName ]>>/<<[ .repoName ]>>?include_prereleases)](https://github.com//<<[ .ownerName ]>>/<<[ .repoName ]>>/releases)
+[![License](https://img.shields.io/github/license/<<[ .ownerName ]>>/<<[ .repoName ]>>)](https://github.com/<<[ .ownerName ]>>/<<[ .repoName ]>>/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/<<[ .ownerName ]>>/<<[ .repoName ]>>/CI)](https://github.com/<<[ .ownerName ]>>/<<[ .repoName ]>>/actions)
+[![Latest Release](https://img.shields.io/github/v/release/<<[ .ownerName ]>>/<<[ .repoName ]>>?include_prereleases)](https://github.com/<<[ .ownerName ]>>/<<[ .repoName ]>>/releases)
 
 A plugin for the [Imposter](https://github.com/Impostor/Impostor) server software.
 
