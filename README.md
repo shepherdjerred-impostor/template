@@ -1,5 +1,5 @@
-# Imposter Template
-Template for new Imposter plugins
+# Impostor Template
+Template for new Impostor plugins
 
 Inspired by [this blog post](https://rclayton.silvrback.com/templatizing-github-template-repos)
 
@@ -10,6 +10,6 @@ Inspired by [this blog post](https://rclayton.silvrback.com/templatizing-github-
 ## Usage
 1. Create a new repository on GitHub and choose this repository as its template
 2. Clone your new repository
-3. Edit customize.json and replace any variables
-4. Run ./customize
+3. Edit customize.json
+4. Run `./customize`
 5. Commit, push, and work on your new plugin!
